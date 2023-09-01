@@ -311,17 +311,6 @@ def init_empty_df_metrics():
                         columns=['precision', 'accuracy', 'error', 'recall', 'duration'])
 
 
-def get_df_metrics_from_avg(avg_df_metrics):
-    res = pd.DataFrame(data=np.zeros((1, 5), dtype=np.float64), index=[0],
-                       columns=['precision', 'accuracy', 'error', 'recall', 'duration'])
-    res['accuracy'] = avg_df_metrics['accuracy'].mean()
-    res['precision'] = avg_df_metrics['precision'].mean()
-    res['error'] = avg_df_metrics['error'].mean()
-    res['recall'] = avg_df_metrics['recall'].mean()
-    res['duration'] = avg_df_metrics['duration'].mean()
-    return res
-
-
 def get_df_metrics_from_avg_data_cluster(avg_df_metrics):
     res = pd.DataFrame(data=np.zeros((1, 3), dtype=np.float64), index=[0],
                        columns=['ari', 'duration', 'std'])
@@ -433,36 +422,6 @@ def plot_epochs_metric(hist, file_name, metric='loss'):
     plt.legend(['train', 'val'], loc='upper left')
     plt.savefig(file_name)
     plt.close()
-
-
-def save_logs(output_directory, hist, y_pred, y_true, duration):
-    hist_df = pd.DataFrame(hist.history)
-    hist_df.to_csv(output_directory + 'history.csv', index=False)
-
-    df_metrics = calculate_metrics(y_true, y_pred, duration)
-    df_metrics.to_csv(output_directory + 'df_metrics.csv', index=False)
-
-    index_best_model = hist_df['loss'].idxmin()
-    row_best_model = hist_df.loc[index_best_model]
-
-    df_best_model = pd.DataFrame(data=np.zeros((1, 6), dtype=np.float64), index=[0],
-                                 columns=['best_model_train_loss', 'best_model_val_loss', 'best_model_train_acc',
-                                          'best_model_val_acc', 'best_model_learning_rate', 'best_model_nb_epoch'])
-
-    df_best_model['best_model_train_loss'] = row_best_model['loss']
-    df_best_model['best_model_val_loss'] = row_best_model['val_loss']
-    df_best_model['best_model_train_acc'] = row_best_model['acc']
-    df_best_model['best_model_val_acc'] = row_best_model['val_acc']
-    df_best_model['best_model_learning_rate'] = row_best_model['lr']
-    df_best_model['best_model_nb_epoch'] = index_best_model
-
-    df_best_model.to_csv(output_directory + 'df_best_model.csv', index=False)
-
-    # for FCN there is no hyperparameters fine tuning - everything is static in code 
-
-    # plot losses 
-    plot_epochs_metric(hist, output_directory + 'epochs_loss.png')
-
 
 def plot_compare_curves():
     from scipy.interpolate import spline
