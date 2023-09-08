@@ -12,6 +12,10 @@ This work was done by [Ali Ismail-Fawaz](https://hadifawaz1999.github.io/), [Has
 
 ## Usage of code
 
+Before doing anything, run the following command in root directory to build the necessary `cython` components of the Dynamic Time Warping (DTW) algorithm and its variants.
+
+```./utils/build-cython.sh```
+
 In order to use the code, first step is to adapt it to your own machine as follows:
 
 1. You should download the datasets of the [UCR Archive](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/)
