@@ -52,7 +52,7 @@ We present in what follows both the [Multi-Comparison Matric (MCM)](https://gith
 <img src="images/mcm-time.png" alt="summary"/>
 </p>
 <p align="center" width="100%">
-<img src="images/mcm-time.png" alt="summary"/>
+<img src="images/cdd-time.png" alt="summary"/>
 </p>
 
 ## Requirements
