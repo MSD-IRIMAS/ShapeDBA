@@ -6,7 +6,9 @@ This work was done by [Ali Ismail-Fawaz](https://hadifawaz1999.github.io/), [Has
 
 ## Summary figure
 
-[!iomage](images/summary.png)
+<p align="center" width="100%">
+<img src="images/summary.png" alt="summary"/>
+</p>
 
 ## Usage of code
 
@@ -33,13 +35,21 @@ We present in what follows both the [Multi-Comparison Matric (MCM)](https://gith
 
 ### ARI
 
-[!image](images/mcm-ari.png)
-[!image](images/cdd-ari.png)
+<p align="center" width="100%">
+<img src="images/mcm-ari.png" alt="summary"/>
+</p>
+<p align="center" width="100%">
+<img src="images/cdd-ari.png" alt="summary"/>
+</p>
 
 ### Computational Runtime
 
-[!image](images/mcm-time.png)
-[!image](images/cdd-time.png)
+<p align="center" width="100%">
+<img src="images/mcm-time.png" alt="summary"/>
+</p>
+<p align="center" width="100%">
+<img src="images/mcm-time.png" alt="summary"/>
+</p>
 
 ## Requirements
 
