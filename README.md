@@ -6,6 +6,8 @@ This work was done by [Ali Ismail-Fawaz](https://hadifawaz1999.github.io/), [Has
 
 ## Summary figure
 
+[!iomage](images/summary.png)
+
 ## Usage of code
 
 In order to use the code, first step is to adapt it to your own machine as follows:
@@ -26,9 +28,18 @@ Then you can produce the results by running the following command: ```python3 ma
 
 ## Results
 
-### We compared the usage of Kmeans with Euclidean Distance, DBA, softDBA and ShapeDBA as well as the Kshape algorithm following the ARI metric and the running time.
+#### We compared the usage of Kmeans with Euclidean Distance, DBA, softDBA and ShapeDBA as well as the Kshape algorithm following the ARI metric and the running time.
 We present in what follows both the [Multi-Comparison Matric (MCM)](https://github.com/MSD-IRIMAS/Multi_Comparison_Matrix) and the [Critical Difference Diagram (CDD)](https://github.com/hfawaz/cd-diagram) of both studies.
 
+### ARI
+
+[!image](images/mcm-ari.png)
+[!image](images/cdd-ari.png)
+
+### Computational Runtime
+
+[!image](images/mcm-time.png)
+[!image](images/cdd-time.png)
 
 ## Requirements
 
