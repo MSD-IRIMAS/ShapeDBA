@@ -11,7 +11,7 @@ X, y = load_classification(name="Coffee")
 average_class_0 = elastic_barycenter_average(X[y == 0], distance="shape_dtw", reach=15)
 ```
 
-This repository contains the code of our paper "[ShapeDBA: Generating Effective Time Series Prototypes using ShapeDTW Barycenter Averaging](https://germain-forestier.info/publis/aaltd2023.pdf)" accepted at [8th Workshop on Advanced Analytics and Learning on Temporal Data (AALTD 2023)](https://ecml-aaltd.github.io/aaltd2023/) in conjunction with the [2023 European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases](https://2023.ecmlpkdd.org/).<br>
+This repository contains the code of our paper "[ShapeDBA: Generating Effective Time Series Prototypes using ShapeDTW Barycenter Averaging](https://doi.org/10.1007/978-3-031-49896-1_9)" [[pdf]](https://germain-forestier.info/publis/aaltd2023.pdf) accepted at [8th Workshop on Advanced Analytics and Learning on Temporal Data (AALTD 2023)](https://ecml-aaltd.github.io/aaltd2023/) in conjunction with the [2023 European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases](https://2023.ecmlpkdd.org/).<br>
 
 This work was done by [Ali Ismail-Fawaz](https://hadifawaz1999.github.io/), [Hassan Ismail Fawaz](https://hfawaz.github.io/), [Fran ̧cois Petitjean](https://www.francois-petitjean.com/), [Maxime Devanne](https://maxime-devanne.com/), [Jonathan Weber](https://www.jonathan-weber.eu/), [Stefano Berretti](http://www.micc.unifi.it/berretti/), [Geoffery I. Webb]() and [Germain Forestier](https://germain-forestier.info/).
 
